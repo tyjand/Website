@@ -1233,9 +1233,12 @@ html {
   line-height: 1.6;
 }
 
-
-
-
-
+.explore-gallery {
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
 
 }
