@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class ='container'>
+    <header>
+      <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+            </a>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="passions.html">Passions</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  <div class="head"><h1>Photography</h1></div>
+  <div class="gallery">
+    <div class="gallery-item" tabindex="0">
+      <img src="images/moped.jpg" alt="Red moped in front of a restaurant">
+      <div class="overlay-text">Moped Vibes</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/ceiling.jpg" alt="Looking up at a bronze chandellier against a wood ceiling">
+      <div class="overlay-text">Cool Ceiling</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/trees.jpg" alt="Snow covered tree tops">
+      <div class="overlay-text">Tranquil Trees</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/building.jpg" alt="a blue skyscraper on a cloudy day">
+      <div class="overlay-text">Urban Angles</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/basement.jpg" alt="A retro looking restuarant basement">
+      <div class="overlay-text">Basement Mystery</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/mountain.jpg" alt="The top of a mountain looking down a skytrail covered with snowy trees">
+      <div class="overlay-text">Mountain Stillness</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/man.jpg" alt="A man in black and white walking with a ladder on his left shoulder">
+      <div class="overlay-text">Portrait Mood</div>
+    </div>
+    <div class="gallery-item" tabindex="0">
+      <img src="images/light.jpg" alt="A neon yellow angular light">
+      <div class="overlay-text">Industrial Lines</div>
+    </div>
+  </div>
+  
+</main>
+
+  <footer tabindex="0" class = 'footer'>
+    <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>

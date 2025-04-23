@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class ='container'>
+  <header>
+    <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+          </a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="passions.html">Passions</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <section class="explore-gallery">
+      <a href="projects.html" class="explore-card" tabindex="0">
+        <img src="images/archetypes.png" alt="Projects preview">
+        <h3>Projects</h3>
+      </a>
+
+      <a href="photography.html" class="explore-card" tabindex="0">
+        <img src="images/trees.jpg" alt="Photography preview">
+        <h3>Photography</h3>
+      </a>
+
+      <a href="design.html" class="explore-card" tabindex="0">
+        <img src="images/cranes.jpg" alt="Design preview">
+        <h3>Design</h3>
+      </a>
+    </section>
+</main>
+
+  <footer tabindex="0" class="footer">
+    <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => e.stopPropagation());
+  </script>
+</body>
+</html>
+
+
+

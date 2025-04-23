@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+          </a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="passions.html">Passions</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <section class="intro">
+    <div class="intro-text" tabindex="0">
+      <h1>Hi, I’m Ty.</h1>
+      <h2>I am a sophomore studying Urban Technology and User Experience Design at the University of Michigan.</h2>
+    </div>
+    <img class="profile" src="images/me.jpg" alt="A photo of a teenage boy wearing a blue sweater with white dots">
+  </section>
+  
+
+  <section class="section-light">
+    <h2>Be Happlimatic.</h2>
+    <div class="content-wrapper" tabindex="0">
+      <div class="blah-box">
+        Happlimatic: adjective; a word I created in seventh-grade to describe a form of happiness never experienced before by any human being; a happiness that is unobstructed by any pain. 
+        <a href="essay.html" class="read-more-link">Read more</a>
+      </div> 
+  </section>
+
+  <section class="contact" id="contact">
+    <form   action="https://formspree.io/f/myzeoyer"
+    method="POST">
+     <fieldset>
+       <legend>Want to get in touch?</legend>
+       <label for="name_id">Your Name</label>
+       <input type="text" placeholder="Enter Your Name" id = "name_id" name = "name">
+   
+       <label for="your_email_id">Your Email</label>
+       <input type="email" id = "your_email_id" name = "email">
+   
+       <label for="message">Leave A Message</label>
+       <textarea id = "message" name = "message"></textarea>
+   
+       <input class ="submit" type="submit" id = "submit" tabindex="0">
+     </fieldset>
+    </form>
+  </section>
+  <footer tabindex="0" class = 'footer'>
+    <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+  </footer>
+
+<script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation(); 
+    nav.classList.toggle('nav-open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+      nav.classList.remove('nav-open');
+    }
+  });
+  nav.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+</script>
+
+</body>
+</html>
+

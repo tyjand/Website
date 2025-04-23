@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+          </a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="passions.html">Passions</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="section2-light">
+    <h2>Be Happlimatic.</h2>
+    <div class="content-wrapper" tabindex="0">
+      <div class="blah-box2">
+        Happlimatic: adjective; a word I created in seventh-grade to describe a form of happiness never experienced before by any human being; a happiness that is unobstructed by any pain. The idea of living a life of pure happiness is one I have always strived to obtain, but never anticipated the problems it could create. Early on in my life, my parents divorced and it forever changed the way I live each day. I have to plan what clothes to bring where and, when I forget something, I have to drive an hour and a half to resolve my small mistake. My life has been obstructed by anxiety, depression, the fear of being alone, and so many more “problems” that at any moment I could use as an excuse to quit. Yet, my life is happlimatic. In my opinion, the people we stand to be today would simply not exist without the suffering that knocks us down. <br><br>
+The creation of the word was during a dark time in my life when everything I knew was being questioned–an existential crisis so to speak. It gave me something to strive for, even though I knew I would never have the ability to obtain it. The word itself resembles the spelling and sounding of “problematic” because, if we had a truly happlimatic world, there would be no desire to survive, no will to live. The lives we all live are far from perfect, but they are one step closer to happlimatic than not living them at all. We fight an unattainable fight and yet we keep fighting because, without perseverance, no growth is found; without care, no love is formed. Today, I send out a monthly newsletter dedicated to acknowledging all we have to be grateful for. Whether an issue affects a population of people or just a singular person, a difference was made in the world. Each newsletter makes the world a little bit brighter, kinder, and more happlimatic than it ever had the chance to be before. <br><br>
+When we wish someone to have a happlimatic day, we are wishing them to experience a boundless form of happiness–it exceeds an exchange of kind remarks. I dream of happlimcatic becoming a word in the dictionary that is used everyday in acts of kindness. Our world is divided and, while I do not think a singular word will change it, I think it is a first step at doing so. If we find a way to implement a little piece of happlimatic into our lives, and attempt to understand what it means, real change will appear even more attainable. My monthly newsletter, The Dose of Happiness, offers a break from our busy lives and has an open invitation to smile within it. I believe that no matter what happens in the world, we are all bonded together by a force of love that most are blind to, but cannot escape. The Dose of Happiness is just the first step in changing the world, it is the hand being offered out to make change, especially in a time where we need it most. <br><br>
+The way I see it, all we have is now. Spreading the light inside of us and making our mark on the world is the only way for the best versions of ourselves to shine through. For now, I wish you a happlimatic day, and the future that follows it is up to the person living the journey called life that we are all on. Each moment is a gift, all we can do is live it without any regrets. The struggles that always hold us down will forever define us until we find a way to define them. 
+  </section>
+</main>
+
+
+  <footer tabindex="0" class = 'footer'>
+    <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

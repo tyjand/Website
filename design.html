@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+            </a>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="passions.html">Passions</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="head"><h1>Design</h1></div>
+
+    <div class="gallery" id="main-content">
+      <div class="gallery-item" tabindex="0">
+        <img src="images/cranes.jpg" alt="Looking down on a bunch of white paper cranes and one red paper crane">
+      <div class="overlay-text">Cranes in Motion</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/pants.jpg" alt="Orange and black plaid pants with one leg kicking back">
+      <div class="overlay-text">Cranes in Motion</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/pot.jpg" alt="Still life charcoal drawing of a pot with flowers sticking out">
+      <div class="overlay-text">Cranes in Motion</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/squares.jpg" alt="Assortment of colorful granny squares">
+      <div class="overlay-text">Cranes in Motion</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/home.jpg" alt="A drawing in black and white of a two story house with big windows">
+        <div class="overlay-text">Cozy Corners</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/pasta.jpg" alt="Pasta that is not cooked at the top but cooked on the bottom bound together on a piece of paper">
+        <div class="overlay-text">Pasta Perfection</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/bag.jpg" alt="A yellow leather bag with no straps">
+        <div class="overlay-text">Bagged Style</div>
+      </div>
+      <div class="gallery-item" tabindex="0">
+        <img src="images/interior.jpg" alt="A yellow leather bag with no straps">
+        <div class="overlay-text">Bagged Style</div>
+      </div>
+    </div>
+  </main>
+
+  <footer tabindex="0" class="footer">
+    <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>
+

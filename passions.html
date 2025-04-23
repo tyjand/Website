@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Passions | Ty's Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html"><img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" /></a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="passions.html" class="active">Passions</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="main-content">
+    <div class="head"><h1>Passions</h1></div>
+
+    <section class="passion-gallery">
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/exterior.jpg" alt="A drawing of a house entirely made of glass on a dark day">
+        <h3>Architecture</h3>
+        <p>I have always been fascinated by the role architecture plays in people's lives. The design of a physical space dictates the entire way in which we move on a daily basis.</p>
+      </div>
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/pipes.jpg" alt="looking at pipes on a wall at an angle">
+        <h3>Photography</h3>
+        <p>How else to image a memory in a fresh way? Photography, to me, is a way to live through life embracing the joy and beauty in the simplist of forms.</p>
+      </div>
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/run.png" alt="A digital illustration of a track with a field that has white text that says 'track'">
+        <h3>Running</h3>
+        <p>Running is a form of therapy, it clears the brain and rejuvinates the soul. I find peace in challenging my body because it keeps me yearning to grow and explore.  </p>
+      </div>
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/jazz.png" alt="A digital illustration of horizontal lines build like piano keys that say jazz between them">
+        <h3>Jazz</h3>
+        <p>Jazz is tranquility in a sound. There is something profound about jazz, it delivers a reaction that pushes us to move, to feel the beat and embrace the story beyond the notes. </p>
+      </div>
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/interior.jpg" alt="A digital illustration of a green kitchen with black coutner tops">
+        <h3>Interior Design</h3>
+        <p>Interior design is a way of bringing everything that feels right together and showcasing your personal style. </p>
+      </div>
+
+      <div class="passion-card" tabindex="0">
+        <img src="images/tennis.png" alt="A digital illsutration that is purple with a tennis net in the bottom left corner and says 'Tennis' on an angle">
+        <h3>Tennis</h3>
+        <p>Tennis is just fun, it teaches me to allow things to be playful, to find joy in competition, and build skills in something that brings me joy. </p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer tabindex="0" class="footer">
+    <p>© <span id="year"></span> Ty Anderson. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => e.stopPropagation());
+  </script>
+
+</body>
+</html>

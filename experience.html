@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+          </a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+      </div>
+      <ul class="nav-links">
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="passions.html">Passions</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+      <main class="container2">
+        <section class="experience-section">
+          <div class="download-wrapper">
+            <a href="images/resume.pdf" download class="download-btn">Download Resume</a>
+          </div>
+            <h2>Work Experience</h2>
+    
+          <div class="card" tabindex="0">
+            <h3>Front End Web Developer – Prison Creative Arts Project</h3>
+            <p class="date">Nov 2024 – Present</p>
+            <ul>
+              <li>Utilized skills in website development to formulate over 15 webpages for formerly incarcerated individuals in order to break stereotypes surrounding their experiences and identities and support them through community building </li>
+              <li>Corresponded with over 15 artists through in depth conversations regarding identity and artwork in order to create a product of their satisfaction that broadens their audience in the artistic community and strengthens overall outreach</li>
+              <li>Curated digital marketing tools to efficiently document the evolution of a variety of collaborative projects that spread the knowledge of the project while still involving existing stakeholders with the ongoing work </li>
+            </ul>
+          </div>
+    
+          <div class="card" tabindex="0">
+            <h3>Host + Busser – Pasta Beach Providence</h3>
+            <p class="date">Aug 2022 – Aug 2024</p>
+            <ul>
+              <li>Managed and streamlined takeout orders across the utilization of 3 tablets over the course of 11 hours shifts while engaging with customers in professional and personal ways that upheld the light and friendly atmosphere
+              </li>
+              <li>Organized the host desk as well as 4 other workspace stations throughout the restaurant to keep things running efficiently while presenting in a professional manner that boosted the seamlessness of each guest’s experience </li>
+              <li>Cleaned tables in an orderly fashion while remaining under significant pressure to keep everything running smoothly while continually managing and arranging a consistent over 200 guests in the restaurant on a nightly basis</li>
+            </ul>
+          </div>
+        </section>
+    
+        <section class="experience-section2">
+          <h2>Campus Involvement</h2>
+    
+          <div class="card" tabindex="0">
+            <h3>Recruitment Chair – Alpha Theta Delta</h3>
+            <p class="date">Sept 2024 – Present</p>
+            <ul>
+              <li>Operated as Recruitment Chair to over 200 potential new members through the creation of professional and social events dedicated to establishing connection and purpose in order to ensure a strong future for the organization</li>
+              <li>Delivered presentations to over 50 other members through uses of design jams and formal pitches to the greater community surrounding concepts of design software and passion projects in efforts for deep critique experience</li>
+            </ul>
+          </div>
+    
+          <div class="card" tabindex="0">
+            <h3>Student Advisory Board Member – Ginsberg Center</h3>
+            <p class="date">May 2024 – Present</p>
+            <ul>
+              <li>Delegated grant selection and hiring committee events through the Ginsberg Center while upholding guiding DEI principles with 14 other members of the board to discuss upcoming projects dedicated to positive social change</li>
+              <li>Drove in monthly meetings dedicated to producing equitable voices through discussion in forms of focus groups that collectively developed communication and community building skills in forms of civic engagement
+              </li>
+            </ul>
+          </div>
+        </section>
+        </main>
+
+      <footer tabindex="0" class = 'footer'>
+        <p>© Copyrights <span id="year"></span>; Ty Anderson. All rights reserved.</p>
+      </footer>
+    
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        const toggleBtn = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+      
+        toggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation(); 
+          nav.classList.toggle('nav-open');
+        });
+        document.addEventListener('click', (e) => {
+          if (!nav.contains(e.target)) {
+            nav.classList.remove('nav-open');
+          }
+        });
+        nav.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+      </script>
+
+</body>
+</html>
