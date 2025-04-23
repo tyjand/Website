@@ -60,6 +60,7 @@ header {
   cursor: pointer;
   padding: 0.5em;
   padding-right: 2rem;
+  
 }
 
 .nav-links {
@@ -81,6 +82,7 @@ header {
 
 .nav-open .nav-links {
   display: flex;
+  align-items: center;
 }
 
 .nav-links {
@@ -89,6 +91,7 @@ header {
 
 
 .intro {
+  min-height: 63vh;
   background: black;
   color: white;
   display: flex;
@@ -102,6 +105,7 @@ header {
 }
 
 .intro-text {
+  padding-top: 7rem;
   max-width: 100%;
 }
 
