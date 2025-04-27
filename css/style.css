@@ -375,7 +375,7 @@ input[type="submit"]:hover {
 }
 
 .head {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 2.5rem;
   padding-top: 3rem;
   text-align: center;
@@ -638,6 +638,44 @@ input[type="submit"]:hover {
   flex-direction: column;
   gap: 2rem;
 }
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.gallery-item .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.overlay-text,
+.year,
+.description {
+  white-space: wrap;
+  color: white;
+}
+
+.year{
+  font-style: italic;
+  vertical-align: middle;
+}
+
 
 
 
@@ -1040,24 +1078,42 @@ html {
   opacity: 0;
 }
 
-.overlay-text {
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  opacity: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   z-index: 2;
+  opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
   pointer-events: none;
+  color: white;
+  gap: 2px;
 }
 
-.gallery-item:hover .overlay-text, .gallery-item:focus .overlay-text {
+.overlay-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.year{ 
+  font-size: 14px;
+  font-style: italic;
+}
+
+.description {
+  padding-left: 1rem;
+ padding-right: 1rem;
+}
+
+.gallery-item:hover .text,
+.gallery-item:focus .text {
   opacity: 1;
 }
+
 
 .gallery-item:hover, .gallery-item:focus {
   border: 2px solid white;
@@ -1232,6 +1288,7 @@ html {
 .project-info h2 {
   margin-top: 0;
   font-size: 1.6rem;
+  padding-bottom: 1rem;
 }
 
 .project-info p {
