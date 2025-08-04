@@ -802,6 +802,7 @@ input[type="submit"]:hover {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
     margin: 2em;
+    margin-top: 0em;
   }
 
   .download-wrapper {
@@ -1136,6 +1137,7 @@ html {
   justify-items: center;
   padding-top: 75px;
   color: white;
+  margin-top: 0;
 }
 
 .container {
@@ -1312,7 +1314,7 @@ html {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 9rem;
 }
 
 .explore-card img {
