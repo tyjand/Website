@@ -741,6 +741,14 @@ input[type="submit"]:hover {
   transform: scaleX(1);
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 1.5em;
+  text-align: center;
+}
+
 .profile-hover {
   display: none;
 }
@@ -827,7 +835,20 @@ input[type="submit"]:hover {
     opacity: 1;
   }
 
+  .intro {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10em 5em;
+  }
 
+  .intro-text {
+    max-width: 60%;
+  }
+
+  .profile-container {
+    display: inline-block;
+  }
 
 
 
