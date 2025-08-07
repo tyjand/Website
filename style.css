@@ -741,8 +741,34 @@ input[type="submit"]:hover {
   transform: scaleX(1);
 }
 
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
 .profile-hover {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  left: 1px;
+}
+
+.profile-default {
+  transition: opacity 0.4s ease-in-out;
+  object-fit: fill;
+}
+
+.profile-container:active .profile-default {
+  opacity: 0;
+}
+
+.profile-container:active .profile-hover {
+  opacity: 1;
 }
 
 
@@ -802,7 +828,6 @@ input[type="submit"]:hover {
   }
 
   .profile-hover {
-    display: inline;
     position: absolute;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
