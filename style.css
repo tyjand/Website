@@ -807,7 +807,7 @@ input[type="submit"]:hover {
     display: inline-block;
   }
 
-  .profile-hover {
+  /* .profile-hover {
     display: inline;
     position: absolute;
     opacity: 0;
@@ -818,9 +818,9 @@ input[type="submit"]:hover {
     object-fit: cover;
     border: 5px solid white;
     left: 1px;
-  }
+  } */
 
-  .profile-default {
+  /* .profile-default {
     transition: opacity 0.4s ease-in-out;
     object-fit: fill;
   }
@@ -831,7 +831,7 @@ input[type="submit"]:hover {
 
   .profile-container:hover .profile-hover {
     opacity: 1;
-  }
+  } */
 
   .intro {
     flex-direction: row;
