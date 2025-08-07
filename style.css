@@ -139,12 +139,15 @@ header {
   line-height: 1.5;
 }
 
-.profile {
-  width: 200px;
-  height: 200px;
+.profile-default {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-light {
@@ -565,11 +568,6 @@ header {
   flex-direction: column;
   padding: 4em 1.5em;
   text-align: center;
-}
-
-.profile {
-  width: 180px;
-  height: 180px;
 }
 
 .download-wrapper {
