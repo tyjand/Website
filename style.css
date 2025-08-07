@@ -741,6 +741,32 @@ input[type="submit"]:hover {
   transform: scaleX(1);
 }
 
+.profile-hover {
+  visibility: visible;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  left: 1px;
+}
+
+.profile-default {
+  transition: opacity 0.4s ease-in-out;
+  object-fit: fill;
+}
+
+.profile-container:active .profile-default {
+  opacity: 0;
+}
+
+.profile-container:active .profile-hover {
+  opacity: 1;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -790,6 +816,46 @@ input[type="submit"]:hover {
     height: 300px;
   }
 
+
+
+  .profile-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .profile-hover {
+    visibility: visible;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    left: 1px;
+  }
+
+  .profile-default {
+    transition: opacity 0.4s ease-in-out;
+    object-fit: fill;
+  }
+
+  .profile-container:hover .profile-default {
+    opacity: 0;
+  }
+
+  .profile-container:hover .profile-hover {
+    opacity: 1;
+  }
+
+
+
+
+
+
+
+
   .section-light h2 {
     font-size: 5em;
   }
@@ -802,12 +868,28 @@ input[type="submit"]:hover {
   .gallery {
     grid-template-columns: repeat(4, 1fr);
     margin: 2em;
+    margin-top: 0em;
   }
 
   .download-wrapper {
+    position: fixed;
     justify-content: flex-end;
-    padding-right: 2rem;
-    padding-top: 3rem;
+    top: 40px;
+    right: 20px;
+    z-index: 1000;
+    animation: gentle-shake 3s infinite;
+  }
+
+  @keyframes gentle-shake {
+    0%, 90%, 100% {
+      transform: translateX(0);
+    }
+    92%, 96% {
+      transform: translateX(-5px);
+    }
+    94%, 98% {
+      transform: translateX(5px);
+    }
   }
 
   .card {
@@ -1136,6 +1218,7 @@ html {
   justify-items: center;
   padding-top: 75px;
   color: white;
+  margin-top: 0;
 }
 
 .container {
@@ -1312,7 +1395,7 @@ html {
   align-items: stretch;
   flex-wrap: wrap;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 9rem;
 }
 
 .explore-card img {
