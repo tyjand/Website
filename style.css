@@ -741,14 +741,6 @@ input[type="submit"]:hover {
   transform: scaleX(1);
 }
 
-.profile-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  width: 100%;
-}
-
 .profile-hover {
   display: none;
 }
@@ -810,6 +802,7 @@ input[type="submit"]:hover {
   }
 
   .profile-hover {
+    display: inline;
     position: absolute;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
