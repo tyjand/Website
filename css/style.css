@@ -139,12 +139,15 @@ header {
   line-height: 1.5;
 }
 
-.profile {
-  width: 200px;
-  height: 200px;
+.profile-default {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section-light {
@@ -567,11 +570,6 @@ header {
   text-align: center;
 }
 
-.profile {
-  width: 180px;
-  height: 180px;
-}
-
 .download-wrapper {
   justify-content: center;
   padding: 2rem 1rem;
@@ -741,8 +739,16 @@ input[type="submit"]:hover {
   transform: scaleX(1);
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 1.5em;
+  text-align: center;
+}
+
 .profile-hover {
-  visibility: hidden;
+  display: none;
 }
 
 
@@ -801,8 +807,8 @@ input[type="submit"]:hover {
     display: inline-block;
   }
 
-  .profile-hover {
-    visibility: visible;
+  /* .profile-hover {
+    display: inline;
     position: absolute;
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
@@ -812,9 +818,9 @@ input[type="submit"]:hover {
     object-fit: cover;
     border: 5px solid white;
     left: 1px;
-  }
+  } */
 
-  .profile-default {
+  /* .profile-default {
     transition: opacity 0.4s ease-in-out;
     object-fit: fill;
   }
@@ -825,9 +831,22 @@ input[type="submit"]:hover {
 
   .profile-container:hover .profile-hover {
     opacity: 1;
+  } */
+
+  .intro {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10em 5em;
   }
 
+  .intro-text {
+    max-width: 60%;
+  }
 
+  .profile-container {
+    display: inline-block;
+  }
 
 
 
