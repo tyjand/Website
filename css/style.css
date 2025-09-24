@@ -751,6 +751,12 @@ input[type="submit"]:hover {
   display: none;
 }
 
+.points {
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 1.6;
+}
 
 
 @media only screen and (min-width: 768px) {
