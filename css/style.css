@@ -758,6 +758,27 @@ input[type="submit"]:hover {
   line-height: 1.6;
 }
 
+.gallery-item::before {
+  opacity: 0 !important;
+}
+
+.gallery-item:hover::before,
+.gallery-item:focus::before {
+  opacity: 0 !important;
+}
+
+.gallery-item:hover img,
+.gallery-item:focus img {
+  opacity: 1 !important;
+}
+
+.gallery-item .overlay-text {
+  opacity: 1 !important;
+  position: static;
+  transform: none;
+  margin-top: 0.5rem;
+}
+
 
 @media only screen and (min-width: 768px) {
 
