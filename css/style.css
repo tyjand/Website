@@ -1179,19 +1179,19 @@ html {
 }
 
 .gallery-item:hover::before {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .gallery-item:focus::before {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .gallery-item:hover img {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .gallery-item:focus img {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .text {
