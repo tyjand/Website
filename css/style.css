@@ -299,13 +299,13 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem 1.5rem 3rem;
+  padding: 2rem;;
   gap: 1.5rem;
   width: 100%;
 }
 
 .intro-text {
-  padding-top: 0;
+  padding-top: 10rem;
   max-width: 100%;
   width: 100%;
 }
@@ -337,6 +337,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10rem;
 }
 
 /* Desktop enhancements */
