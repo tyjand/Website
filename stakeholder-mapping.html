@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stakeholder Mapping | Ty Anderson</title>
+  <link rel="icon" href="images/CRANE.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/html5reset.css" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-02CS0K5ZZV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-02CS0K5ZZV');
+</script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <a href="#main-content" class="skip" tabindex="0">Skip to Main Content</a>
+      <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/CRANE.png" alt="an orange and yellow paper crane illustration" />
+            </a>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+        <ul class="nav-links">
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="passions.html">Passions</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="https://www.linkedin.com/in/ty-j-anderson" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="main-content" class="project-detail-wrapper">
+      <div class="project-hero">
+        <img src="images/map.jpg" alt="Stakeholder Mapping Project" />
+        <h1 class="project-title">Stakeholder Mapping</h1>
+      </div>
+
+      <div class="project-overview">
+        <h2>Overview</h2>
+        <p>Aiming to understand how environmental conditions impact surrounding stakeholders, this project mapped the relationships between a deteriorating crosswalk and related programs, infrastructure, and governing bodies in Ann Arbor. It taught me how to visualize complex relationships and shifted my perspective on research methods, showing how seemingly obvious issues can reveal deeper systemic connections.</p>
+        <p><a href="images/map.pdf" target="_blank" class="external-link">View PDF →</a></p>
+      </div>
+
+      <div class="design-process">
+        <h2>Design Process</h2>
+        <div class="process-content">
+          <p>This is where you can discuss the design process for the Stakeholder Mapping project. Add your thoughts, methodology, challenges, and insights here.</p>
+          <!-- Add your design process content here -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer tabindex="0" class="footer">
+    <div class="footer-links">
+      <a href="mailto:tyand@umich.edu">Email</a>
+      <span class="footer-separator">|</span>
+      <a href="https://www.linkedin.com/in/ty-j-anderson" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="footer-separator">|</span>
+      <a href="images/Anderson_Resume.pdf" download="anderson_resume.pdf">Resume</a>
+    </div>
+    <div class="footer-right">
+      <img src="images/CRANE.png" alt="Logo" class="footer-logo">
+      <div class="footer-name">Ty Anderson</div>
+      <div class="footer-copyright">© <span id="year"></span> Ty Anderson</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+  
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); 
+      nav.classList.toggle('nav-open');
+    });
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+      }
+    });
+    nav.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+  </script>
+</body>
+</html>
+
