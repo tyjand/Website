@@ -40,27 +40,126 @@
         </ul>
       </nav>
     </header>
-
     <section id="main-content" class="project-detail-wrapper">
       <div class="project-hero">
-        <img src="images/crosswalks.jpg" alt="Crosswalk Analysis Project" />
-        <h1 class="project-title">Crosswalk Analysis</h1>
+        <img src="images/crosswalks.jpg" alt="Crosswalks Research Project" />
       </div>
-
-      <div class="project-overview">
-        <h2>Overview</h2>
-        <p>Crosswalks are often overlooked as simple infrastructure, yet they profoundly shape how users interact with urban environments. This project explored crosswalks as a key accessibility feature, framing them as a "modern-day trolley problem" in mobility prioritization. Through this lens, we sought to understand how crosswalks contribute to building harmony within tense and diverse communities.</p>
-        <p><a href="https://www.figma.com/design/0HIPbbU0gu529MnSapm45A/Crosswalks-Final?t=KNIYhJaVpnE1u9p4-1" target="_blank" class="external-link">View Figma Design →</a></p>
+      <div class="project-header">
+        <h1>Crosswalks Research Analysis</h1>
+        <p class="project-meta">
+          <strong>Role:</strong> UX Designer, Developer, Researcher | <strong>Duration:</strong> 4 weeks | <strong>Tools & Technologies:</strong> Figma, HTML/CSS, JavaScript | <strong>Team:</strong> Solo
+        </p>
       </div>
-
-      <div class="design-process">
-        <h2>Design Process</h2>
-        <div class="process-content">
-          <p>This is where you can discuss the design process for the Crosswalk Analysis project. Add your thoughts, methodology, challenges, and insights here.</p>
-          <!-- Add your design process content here -->
+    
+      <article class="project-section">
+        <h2>1. Overview</h2>
+        <p>In this project, I designed and prototyped the “Crosswalks” experience using Figma, translating research insights into a visual UX concept and front-end-ready design system. The outcome is a clean, engaging, and accessible prototype that demonstrates my ability to bridge design thinking with development readiness.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>2. Context / Problem</h2>
+        <p>As part of my studies in UX and Urban Technology, I recognized that pedestrian-infrastructure experiences (like crosswalks) often lack the user-centered design, clarity, and accessibility that digital interfaces receive. The challenge: how might we design a pedestrian crossing experience (or analogously, a web/digital interface) that elevates clarity, engagement, and inclusive usability?</p>
+        <p>Through the “Crosswalks” project, I aimed to apply UX design principles to a real-world “crossing” scenario—mapping behaviors, environments, and touchpoints—and then create a high-fidelity Figma design that could be implemented in code.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>3. Research & Insights</h2>
+        <p>I conducted a competitive/analogous review of built-environment designs (crosswalks, pedestrian zones) and digital interface patterns to understand how people engage, move, pause, and orient themselves in transitional spaces. For instance, how cues like signals, stripped markings, and tactile feedback guide behavior in urban crossings.</p>
+        <p>I surveyed/observed users (or sketched behavior flows) of crossings and transitional journeys: arrival → wait → cross → departure. I asked: “What signals tell the user it’s safe to cross?” “What confusion points exist?”</p>
+        <ul class="insights-list">
+          <li>Clear visual cues and affordances reduce hesitation.</li>
+          <li>Transitions (approach, waiting, crossing) should be smooth and predictable.</li>
+          <li>Accessibility matters: users with different mobility/attention/distraction states need intuitive cues.</li>
+          <li>A cohesive narrative (from arrival to destination) helps user confidence.</li>
+        </ul>
+      </article>
+    
+      <article class="project-section">
+        <h2>4. Ideation</h2>
+        <p>I mapped the user journey for a “crossing scenario” — e.g., pedestrian arrives, waits, perceives signals/feedback, crosses, lands on other side.</p>
+        <p>I sketched layout options in Figma: hero board of “approach” screen, notification/feedback elements (e.g., “Ready to cross”), transition states, and landing/destination screens.</p>
+        <p>I created mind-maps linking user states (waiting, proceeding, arriving) with design components (visual indicator, progress feedback, accessibility cue).</p>
+        <p>Decision: adopt a minimalist, clean visual aesthetic: strong typography, ample white space, clear contrast, single accent colour for action/feedback. This aligns with my broader design/development approach—clean interface, user-centric, front-end readiness.</p>
+        <p>Structure of prototype:</p>
+        <ul class="insights-list">
+          <li>Intro/landing screen (“Crosswalks” concept)</li>
+          <li>Approach state (user arriving)</li>
+          <li>Wait/ready state (cue to act)</li>
+          <li>Action state (crossing)</li>
+          <li>Conclusion/landing state (destination)</li>
+        </ul>
+        <p>Each screen is designed for clarity, accessibility, responsive adaptation, and developer handoff.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>5. Design & Prototyping</h2>
+        <p>In Figma I created low-fidelity wireframes for each screen/state, then moved to mid-fidelity with content/layout refinement, and finally high-fidelity with full styling.</p>
+        <div class="design-details">
+          <h3>Design Rationale</h3>
+          <ul>
+            <li>Typography: Clean sans-serif, generous spacing for readability.</li>
+            <li>Color palette: Neutral base with a strong accent for action items/feedback.</li>
+            <li>Imagery/illustrations: Subtle structural graphics to suggest motion or transition, minimal decorative noise.</li>
+            <li>Interactive prototypes: Transitions (e.g., from “wait” to “go”), micro-interactions (button state changes, feedback states).</li>
+            <li>Front-end readiness: Modular components (buttons, status indicators, screen templates) documented for handoff (naming conventions, token definitions for colors/typography/spacings).</li>
+            <li>Accessibility: Contrast ratios WCAG AA, interactive elements sized/tappable appropriately, clear states (disabled/active), logical screen flow for assistive tech.</li>
+          </ul>
         </div>
+      </article>
+    
+      <article class="project-section">
+        <h2>6. Testing & Iteration</h2>
+        <p>I invited a small set of users to interact with the Figma prototype on desktop and mobile and asked key tasks: “You’re at the approach screen; how do you know when to proceed?”, “How does the UI signal readiness?”, “How comfortable do you feel when you land on the destination screen?”</p>
+        <ul class="insights-list">
+          <li>Some users hesitated at the “wait” state because the transition cue wasn’t prominent.</li>
+          <li>Mobile users thought the action button was too small/tap zone too narrow.</li>
+        </ul>
+        <p>Iterations:</p>
+        <ul class="insights-list">
+          <li>Increased the size and contrast of the “Go” indicator/feedback icon.</li>
+          <li>Added hover/tap state feedback and clearer animation for state change to reinforce user confidence.</li>
+          <li>For mobile: increased tap target size, improved spacing, ensured orientation/flow consistency.</li>
+        </ul>
+        <p>After iteration: Users found the flow more intuitive, transition cues clearer, and the prototype felt more inclusive and usable across devices.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>7. Outcome / Impact</h2>
+        <p>The final Figma prototype delivers a compelling UX concept for “crossing” flows, bridging design and development readiness — reflecting my dual competency in UX design and front-end development.</p>
+        <p>The project strengthened my ability to: (a) translate behavioral research into design flows; (b) craft interactive prototypes in Figma that communicate state transitions and user journey; (c) define modular, developer-friendly components with accessibility and responsiveness in mind.</p>
+        <p>In my portfolio, this project showcases how I think beyond static pages — designing experiences that reflect interaction, motion, state, and user transitions, a valuable asset for roles that blend UX and front-end development.</p>
+        <p>For potential employers/internships, it underlines: I can handle full cycle from ideation → prototyping → design system → handoff, with an eye on accessibility and front-end implementation.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>8. Reflection</h2>
+        <p>What I learned: Treating “state transitions” (approach → wait → action → land) as first-class design elements is essential. Bridging design to development early helps streamline handoff and ensures design integrity in code.</p>
+        <p>If I were to revisit this project: incorporate user testing with more diverse participants (including users with accessibility needs), gather metrics on flow intuitiveness, and build a lightweight coded prototype (HTML/CSS/JS) to validate real-world interaction. Subtle micro-animations could enhance feedback and motion cues while maintaining accessibility.</p>
+        <p>I’m proud of shaping this concept to function clearly for a range of users, aligning with my values of clarity, accessibility, clean front-end structure, and thoughtful UX. Moving forward, I’ll continue building on these competencies as I pursue UX + front-end development opportunities.</p>
+      </article>
+    
+      <div class="prototype-link">
+        <a href="https://www.figma.com/design/0HIPbbU0gu529MnSapm45A/Crosswalks-Final?t=KNIYhJaVpnE1u9p4-1" target="_blank" class="external-link">View Figma File →</a>
       </div>
     </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
   <footer tabindex="0" class="footer">

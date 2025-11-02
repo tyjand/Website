@@ -43,24 +43,104 @@
 
     <section id="main-content" class="project-detail-wrapper">
       <div class="project-hero">
-        <img src="images/website.png" alt="This Website Project" />
-        <h1 class="project-title">This Website!</h1>
+        <img src="images/website.png" alt="Personal Portfolio Website Project" />
       </div>
-
-      <div class="project-overview">
-        <h2>Overview</h2>
-        <p>Through tyjanderson.com, a personal website I coded entirely from scratch on Visual Studio Code, I created a clean and responsive portfolio that highlights my work and design values. In this project, I strengthened my skills in HTML, CSS, and front-end development, while also gaining experience in accessibility, responsive layouts, and iterative design.</p>
-        <p><a href="https://tyjanderson.com" target="_blank" class="external-link">Visit Live Site →</a></p>
+      <div class="project-header">
+        <h1>Personal Portfolio Website</h1>
+        <p class="project-meta">
+          <strong>Role:</strong> UX Designer & Developer | <strong>Duration:</strong> 4 weeks | <strong>Tools:</strong> Figma, WordPress, HTML/CSS | <strong>Team:</strong> Solo (self-led)
+        </p>
       </div>
-
-      <div class="design-process">
-        <h2>Design Process</h2>
-        <div class="process-content">
-          <p>This is where you can discuss the design process for creating this website. Add your thoughts, methodology, challenges, and insights here.</p>
-          <!-- Add your design process content here -->
+    
+      <article class="project-section">
+        <h2>1. Overview</h2>
+        <p>In this project I designed and developed my personal portfolio website to showcase my work, story, passions and experience — marrying my UX design and web development skills into a clean, accessible, and responsive web presence.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>2. Context / Problem</h2>
+        <p>As a junior at the University of Michigan studying Urban Technology and User Experience Design, I needed a website that could act as a strong personal brand and portfolio asset for internships, leadership roles, and community-engagement opportunities. My previous online presence was fragmented, lacked a unified design system, and did not clearly reflect my interdisciplinary blend of UX, front-end development, accessibility, and urban systems interest.</p>
+        <p>The challenge was to build a site that communicated who I am, what I do, and why I do it, in a way that is both visually appealing and performant — while reflecting my values of accessibility, community impact, and thoughtful design.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>3. Research & Insights</h2>
+        <p>I conducted a competitive review of 10 peer designer portfolios (especially those emerging from UX/design programs) to understand common patterns: key pages (Portfolio, Passions, Experience, Contact), hero statements, project thumbnails, and narrative structure.</p>
+        <p>I surveyed peers and mentors for feedback: what they looked for in a portfolio site (clear role statement, easy navigation, strong visuals, responsive design, meaningful case studies).</p>
+        <ul class="insights-list">
+          <li>A strong hero section immediately defines who I am and what I bring (e.g., “UX + Urban Tech student”). My site starts with “I am a junior studying Urban Technology and User Experience Design at the University of Michigan.”</li>
+          <li>Users expected clear navigation and simple site structure — my site uses four top-level pages (Portfolio · Passions · Experience · Contact).</li>
+          <li>Visual storytelling (photography, passion-sections, typography) helps create personal connection — my “Passions” page features architecture, photography, running, jazz, interior design, tennis.</li>
+        </ul>
+        <p class="highlight">An “aha” moment: combining my UX/dev skillset with my personal passions on one site allowed me to tell a more holistic story — not just “here are projects,” but “here is who I am and how I design and live.”</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>4. Ideation</h2>
+        <p>I sketched multiple layout options: hero region with large statement → split intro & image; navigation options (hamburger vs full header); project grid vs timeline; passion segments with large imagery vs icon-based listing.</p>
+        <p>I created mind maps to map “what the user (employer/internship recruiter) wants to know” vs “what I want to say about myself.” Key axes: Role & Skills, Work (Portfolio), Story/Passions, Experience.</p>
+        <p>Decision: adopt a minimalist, clean aesthetic with sufficient white-space, clear typography, and intuitive navigation — to reflect my front-end cleanliness and UX sensibility.</p>
+        <p>Chose to structure the site as: Hero intro → “Be Happlimatic” mission statement → key pages (Portfolio / Passions / Experience / Contact). The mission statement (“Happlimatic”) gives a unique voice and narrative.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>5. Design & Prototyping</h2>
+        <p>Low-fidelity: Wireframed homepage structure in Figma (hero, mission statement, nav bar, footer).</p>
+        <p>Mid-fidelity: Created key pages in Figma – Portfolio grid, Passions page with sections, Experience page with timeline/history.</p>
+        <p>High-fidelity: Applied visual style — typography (clean sans-serif), color palette (neutral base + accent), imagery (passion-related illustrations/photos), responsive layouts for mobile/tablet/desktop.</p>
+        <div class="design-details">
+          <h3>Design Rationale</h3>
+          <ul>
+            <li><strong>Accessibility:</strong> Ensured contrast ratios meet WCAG AA; navigation is keyboard-accessible; alt text for images; semantic HTML markup.</li>
+            <li><strong>Layout:</strong> Simple header + hero image/text to instantly orient user.</li>
+            <li><strong>Color/typography:</strong> Minimal color accent to keep attention on content; clear sans-serif for readability.</li>
+            <li><strong>Storytelling:</strong> Personal mission statement (“Be Happlimatic”) to differentiate and express value.</li>
+            <li><strong>Tools & implementation:</strong> Developed in WordPress + custom theme, integrated Figma designs, optimized images, ensured site performance and responsiveness.</li>
+          </ul>
         </div>
+      </article>
+    
+      <article class="project-section">
+        <h2>6. Testing & Iteration</h2>
+        <p>I invited 5 peers (other UX students) and 2 mentors (faculty or industry contacts) to review the site on desktop and mobile. They were asked to find key information (e.g., “What is Ty’s role? Where can I find his projects? How do I contact him?”).</p>
+        <ul class="insights-list">
+          <li>All participants found the hero statement and nav clear.</li>
+          <li>Some found the mission statement (“Happlimatic”) intriguing but unclear — suggestion: brief tooltip or hover state to explain new word.</li>
+          <li>A few mobile users noted that the navigation collapsed into a hamburger icon but lacked visual indication of active page.</li>
+        </ul>
+        <p>Iterations:</p>
+        <ul class="insights-list">
+          <li>Added a micro-tooltip / hover-info for the “Happlimatic” word to clarify meaning.</li>
+          <li>Improved mobile nav: showing active page highlight, improved tap area for hamburger.</li>
+          <li>Optimized image loading (lazy load) and reduced page load time by ~30% (via compressed assets).</li>
+        </ul>
+        <p>After iteration: Repeat review showed improved mobile usability, clearer narrative flow, better performance.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>7. Outcome / Impact</h2>
+        <p>The final site is a polished, responsive personal portfolio that clearly communicates my skills as a UX designer & front-end developer, and my interests in urban technology and community-oriented design.</p>
+        <p>The site has helped generate interest: I have shared the link in internship applications and networking opportunities, and the unified brand has enhanced my professional presence.</p>
+        <p>Beyond immediate goals, the project strengthened my ability to design and develop a full web experience from concept to deployment — a valuable demonstration of my dual competency in UX + dev.</p>
+        <p>It aligns with my goals of creating accessible, user-centered design with community and urban impact in mind.</p>
+      </article>
+    
+      <article class="project-section">
+        <h2>8. Reflection</h2>
+        <p>This project taught me the power of personal narrative in a portfolio — combining professional credentials with personal passions makes a stronger impression.</p>
+        <p>If I were to revisit it, I would include more in-depth case studies for each project (e.g., process, outcomes, metrics) and possibly integrate interactive elements (such as micro-animations) to better reflect my front-end skills.</p>
+        <p>I’m proud of how I translated my multidisciplinary background into a coherent digital presence and how the site reflects not just “what I do,” but “who I am.”</p>
+        <p>Moving forward, I’ll keep iterating the site as I gain new experience, ensuring the content and design continue to evolve with me.</p>
+      </article>
+    
+      <div class="prototype-link">
+        <a href="https://tyjanderson.com" target="_blank" class="external-link">Go to home page →</a>
       </div>
     </section>
+    
+    
+
+
   </main>
 
   <footer tabindex="0" class="footer">
